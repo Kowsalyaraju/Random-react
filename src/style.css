@@ -1,0 +1,70 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f8f9fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.main {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin-top: 100px;
+  color: #2c3e50;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centers horizontally */
+  justify-content: center; /* centers vertically (optional) */
+  gap: 20px; /* space between elements */
+
+  border-radius: 10px;
+  width: 400px;
+  height: 200px;
+  padding: 20px;
+  border: none;
+  background: #ffffff;
+  color: #2d3436;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  animation-name: zoom;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes zoom {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+button {
+  background: linear-gradient(135deg, #6c5ce7, #a29bfe);
+  color: white;
+  border-radius: 10px;
+  height: 40px;
+  width: 150px;
+  transition: all 0.2s ease;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(135deg, #5a4bd6, #8c7ae6);
+}
